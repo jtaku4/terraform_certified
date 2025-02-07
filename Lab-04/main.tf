@@ -3,7 +3,7 @@
 #
 # Build WebServer during Bootstrap with External TEMPLATE File
 #
-# Made by Denis Astahov
+# Made by Jenarius Taku
 #----------------------------------------------------------
 
 provider "aws" {
@@ -24,7 +24,7 @@ resource "aws_instance" "web" {
 
   tags = {
     Name  = "WebServer Built by Terraform"
-    Owner = "Denis Astahov"
+    Owner = "Jenarius Taku"
   }
 }
 
@@ -59,6 +59,6 @@ resource "aws_security_group" "web" {
 
   tags = {
     Name  = "WebServer SG by Terraform"
-    Owner = "Denis Astahov"
+    Owner = "Jenarius Taku"
   }
 }
