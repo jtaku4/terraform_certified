@@ -3,7 +3,7 @@
 #
 # Build WebServer during Bootstrap
 #
-# Made by Denis Astahov
+# Made by Jenarius Taku
 #----------------------------------------------------------
 
 provider "aws" {
@@ -28,7 +28,7 @@ chkconfig httpd on
 EOF
   tags = {
     Name  = "WebServer Built by Terraform"
-    Owner = "Denis Astahov"
+    Owner = "Jenarius Taku"
   }
 }
 
@@ -63,6 +63,6 @@ resource "aws_security_group" "web" {
 
   tags = {
     Name  = "WebServer SG by Terraform"
-    Owner = "Denis Astahov"
+    Owner = "Jenarius Taku"
   }
 }
