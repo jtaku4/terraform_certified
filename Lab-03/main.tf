@@ -3,7 +3,7 @@
 #
 # Build WebServer during Bootstrap with External STATIC File
 #
-# Made by Denis Astahov
+# Made by Jenarius Taku
 #----------------------------------------------------------
 
 provider "aws" {
@@ -20,7 +20,7 @@ resource "aws_instance" "web" {
   user_data_replace_on_change = true   # This need to be added!!!! 
   tags = {
     Name  = "WebServer Built by Terraform"
-    Owner = "Denis Astahov"
+    Owner = "Jenarius Taku"
   }
 }
 
@@ -55,6 +55,6 @@ resource "aws_security_group" "web" {
 
   tags = {
     Name  = "WebServer SG by Terraform"
-    Owner = "Denis Astahov"
+    Owner = "Jenarius Taku"
   }
 }
