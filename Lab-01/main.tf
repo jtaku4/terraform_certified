@@ -3,7 +3,7 @@
 #
 # Build EC2 Instances
 #
-# Made by Denis Astahov
+# Made by Jenarius Taku
 #----------------------------------------------------------
 
 provider "aws" {
@@ -17,7 +17,7 @@ resource "aws_instance" "my_ubuntu" {
 
   tags = {
     Name    = "My-UbuntuLinux-Server"
-    Owner   = "Denis Astahov"
+    Owner   = "Jenarius Taku"
     project = "Phoenix"
   }
 }
@@ -28,6 +28,6 @@ resource "aws_instance" "my_amazon" {
 
   tags = {
     Name  = "My-AmazonLinux-Server"
-    Owner = "Denis Astahov"
+    Owner = "Jenarius Taku"
   }
 }
